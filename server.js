@@ -7,7 +7,8 @@ const app = express();
 app.use(express.json());
 
 // MongoDB connection (ONLY ONE)
-mongoose.connect('mongodb+srv://shaunakbtmtcs1232841_db_user:nnWueSMIyAwVZ61B@cluster0.5mgae9t.mongodb.net/pollstack')
+// MongoDB connection
+mongoose.connect('mongodb://trushaparmar28_db_user:KWMNdcbnEGHQfNN4@ac-uv8pynu-shard-00-00.onrf0hf.mongodb.net:27017,ac-uv8pynu-shard-00-01.onrf0hf.mongodb.net:27017,ac-uv8pynu-shard-00-02.onrf0hf.mongodb.net:27017/pollstack?ssl=true&replicaSet=atlas-zwz7cy-shard-0&authSource=admin&retryWrites=true&w=majority')
   .then(() => console.log("Database connected"))
   .catch(err => console.log(err));
 

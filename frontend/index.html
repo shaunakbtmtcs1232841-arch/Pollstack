@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PollStack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>PollStack</h1>
+
+  <!-- Create Poll -->
+  <div class="card">
+    <h2>Create Poll</h2>
+    <input type="text" id="question" placeholder="Enter question"><br><br>
+
+    <input type="text" id="option1" placeholder="Option 1"><br><br>
+    <input type="text" id="option2" placeholder="Option 2"><br><br>
+
+    <button onclick="createPoll()">Create Poll</button>
+  </div>
+
+  <!-- Vote -->
+  <div class="card">
+    <h2>Vote</h2>
+    <input type="text" id="pollId" placeholder="Enter Poll ID"><br><br>
+
+    <input type="text" id="userId" placeholder="Enter User ID"><br><br>
+
+    <input type="text" id="optionIndex" placeholder="Option Index (0 or 1)"><br><br>
+
+    <button onclick="vote()">Vote</button>
+  </div>
+
+  <!-- Results -->
+  <div class="card">
+    <h2>Results</h2>
+    <input type="text" id="resultPollId" placeholder="Enter Poll ID"><br><br>
+
+    <button onclick="getResults()">Get Results</button>
+
+    <div id="results"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

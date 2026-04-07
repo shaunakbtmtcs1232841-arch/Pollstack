@@ -13,7 +13,7 @@ const PollSchema = new mongoose.Schema({
         default: 0
       }
     }
-  ]
+  ],
   votedUsers: {
   type: [String],
   default: []
