@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PollStack Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">Admin Panel</h1>
+
+<div id="loginBox" class="card">
+  <h2>Enter Admin Password</h2>
+  <input type="password" id="adminPass" placeholder="Password">
+  <button onclick="login()">Login</button>
+</div>
+
+<div id="adminPanel" style="display:none;">
+
+  <div class="card">
+    <h2>Create Poll</h2>
+    <input id="question" placeholder="Question">
+    <input id="option1" placeholder="Option 1">
+    <input id="option2" placeholder="Option 2">
+    <button onclick="createPoll()">Create</button>
+  </div>
+
+  <div class="card">
+    <h2>Results</h2>
+    <button onclick="loadResults()">Load Results</button>
+    <div id="results"></div>
+  </div>
+
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
