@@ -75,7 +75,6 @@ app.get('/api/results/latest', async (req, res) => {
   }
 });
 
-// ✅ Vote API (One vote per IP)
 app.post('/api/vote', async (req, res) => {
   try {
     const { pollId, optionIndex } = req.body;
@@ -192,4 +191,4 @@ app.delete('/api/poll/:id', async (req, res) => {
 // ✅ Start Server
 app.listen(3000, () => {
   console.log("🚀 Server running on port 3000");
-});
+});
